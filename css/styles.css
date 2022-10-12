@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.border, .button {
+  border-width: 3px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: grid;
+  grid-template-rows: repeat(9, 90px);
+  grid-template-columns: repeat(16, 80px);
+  grid-auto-flow: column;
+}
+
+.menu-bar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.menu-bar-item {
+  height: 44px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu-bar-item-icon {
+  height: 48px;
+  width: 48px;
+}
+.menu-bar-clock {
+  position: fixed;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 350px;
+  height: 600px;
+  position: fixed;
+  bottom: 65px;
+  left: 5px;
+}
+.menu-sidebar {
+  width: 40px;
+  height: 100%;
+}
+.menu-sidebar h1 {
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.window {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 600px;
+  height: 400px;
+}
+.window-bar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 2px;
+  width: 100%;
+  height: 26px;
+}
+.window-bar .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+}
+
+.background {
+  background-image: url("../img/wallpaper.jpg");
+}
+
+.menu-bar {
+  background-color: rgb(103, 103, 103);
+}
+
+.menu-sidebar {
+  background: rgb(0, 180, 255);
+  background: linear-gradient(0deg, rgb(0, 180, 255) 5%, rgb(0, 11, 255) 95%);
+  color: white;
+}
+
+.ui, .button {
+  background-color: rgb(186, 186, 186);
+}
+
+.border, .button, .border__click, .button:active, .border__invert {
+  border-style: solid;
+  border-top-color: rgb(210, 210, 210);
+  border-left-color: rgb(210, 210, 210);
+  border-bottom-color: rgb(146, 146, 146);
+  border-right-color: rgb(146, 146, 146);
+}
+.border--top {
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+}
+.border__invert {
+  border-top-color: rgb(146, 146, 146);
+  border-left-color: rgb(146, 146, 146);
+  border-bottom-color: rgb(210, 210, 210);
+  border-right-color: rgb(210, 210, 210);
+}
+.border__click, .button:active {
+  border-top-color: rgb(103, 103, 103);
+  border-left-color: rgb(103, 103, 103);
+  border-bottom-color: rgb(210, 210, 210);
+  border-right-color: rgb(210, 210, 210);
+}
+
+.button {
+  color: black;
+}
+.window-bar {
+  background: rgb(0, 180, 255);
+  background: linear-gradient(270deg, rgb(0, 180, 255) 5%, rgb(0, 11, 255) 95%);
+  color: white;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  user-select: none;
+}
+
+.text--large {
+  font-size: 40px;
+  font-weight: 600;
+}
+.text--selectable {
+  user-select: all;
+}
+.text__emoji {
+  font-family: "Noto Emoji", sans-serif;
+}
+.text__emoji--small {
+  font-weight: 700;
+}

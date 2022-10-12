@@ -1,0 +1,79 @@
+$pale-grey: rgb(210,210,210);
+$light-grey: rgb(186, 186, 186);
+$mid-grey: rgb(146, 146, 146);
+$dark-grey: rgb(103, 103, 103);
+
+$vertical: 0deg;
+$horizontal: 270deg;
+
+@mixin gradient ($orientation) {
+    background: rgb(0,180,255);
+    background: linear-gradient($orientation, rgba(0,180,255) 5%, rgba(0,11,255) 95%);
+}
+
+.background {
+    background-image: url("../img/wallpaper.jpg");
+}
+
+.menu-bar {
+    background-color: $dark-grey;
+}
+
+.menu {
+    &-sidebar {
+        @include gradient($vertical);
+        color: white;
+    }
+}
+
+.ui {
+    background-color: $light-grey;
+}
+
+.border {
+    border-style: solid; 
+    border-top-color: $pale-grey;
+    border-left-color: $pale-grey;
+    border-bottom-color: $mid-grey;
+    border-right-color: $mid-grey;
+
+    &--top {
+        border-left-width: 0px;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+    }
+
+    &__invert {
+        @extend .border;
+        border-top-color: $mid-grey;
+        border-left-color: $mid-grey;
+        border-bottom-color: $pale-grey;
+        border-right-color: $pale-grey;
+    }
+
+    &__click {
+        @extend .border;
+        border-top-color: $dark-grey;
+        border-left-color: $dark-grey;
+        border-bottom-color: $pale-grey;
+        border-right-color: $pale-grey;
+    }
+}
+
+.button {
+    @extend .ui;
+    @extend .border;
+
+    &:active {
+        @extend .border__click;
+    }
+
+    color: black;
+}
+
+.window {
+    &-bar {
+        @include gradient($horizontal);
+        color: white;
+    }
+}

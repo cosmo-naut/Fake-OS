@@ -1,0 +1,22 @@
+body {
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
+
+.text {
+    &--large {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    &--selectable {
+        user-select: all;
+    }
+
+    &__emoji {
+        font-family: 'Noto Emoji', sans-serif;
+        &--small {
+            font-weight: 700;
+        }
+    }
+}
