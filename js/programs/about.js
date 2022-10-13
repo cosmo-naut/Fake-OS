@@ -54,9 +54,9 @@ const createEye = () => {
     eyeDiv.appendChild(eyeOuter);
     eyeDiv.appendChild(eyeClosed);
 
-    eyeInner.src = "./../../img/eye-inner.png";
-    eyeOuter.src = "./../../img/eye-outer.png";
-    eyeClosed.src = "./../../img/eye-closed.png";
+    eyeInner.src = "/img/eye-inner.png";
+    eyeOuter.src = "/img/eye-outer.png";
+    eyeClosed.src = "/img/eye-closed.png";
 
     document.addEventListener("mousedown", () => {
         eyeInner.classList.add("hidden");
