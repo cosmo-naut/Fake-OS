@@ -8,11 +8,14 @@ $horizontal: 270deg;
 
 @mixin gradient ($orientation) {
     background: rgb(0,180,255);
-    background: linear-gradient($orientation, rgba(0,180,255) 5%, rgba(0,11,255) 95%);
+    background: linear-gradient($orientation, rgba(0,180,255) 0%, rgb(166, 0, 255) 25%, rgb(255, 0, 81) 50%, rgb(166, 0, 255) 75%, rgba(0,180,255) 100%);
 }
 
 .background {
-    background-image: url("../img/wallpaper.jpg");
+    // background-image: url("../img/wallpaper2.jpg");
+    // background-size: cover;
+    // background-position: center;
+    background-color: rgb(0, 140, 145);
 }
 
 .menu-bar {
@@ -75,5 +78,6 @@ $horizontal: 270deg;
     &-bar {
         @include gradient($horizontal);
         color: white;
+        border-bottom-width: 0px;
     }
 }

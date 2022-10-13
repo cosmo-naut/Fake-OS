@@ -5,8 +5,12 @@ body {
 
 .text {
     &--large {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 600;
+    }
+
+    &--larger {
+        font-size: 60px;
     }
 
     &--selectable {
@@ -18,5 +22,9 @@ body {
         &--small {
             font-weight: 700;
         }
+    }
+
+    &__pixel {
+        font-family: 'Silkscreen', cursive;
     }
 }

@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="./js/interface.js"></script>
     <script defer src="./js/clock.js"></script>
-    <script type="module" defer src="./js/programs/about.js"></script>
+    <script type="module" defer src="./js/programs/programs.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon.ico">
 </head>
 <body>
     <template id="windowTemplate">
-        <div class="window ui border">
-            <div class="window-bar">
+        <div class="window ui border hidden draggable">
+            <div class="window-bar border animation__gradient">
                 <p>Window</p>
                 <div class="button">
                     <p class="text__emoji text__emoji--small">💀</p>
@@ -33,8 +34,12 @@
                 <img src="./img/icons/computer.ico">
                 <p>About</p>
             </div>
+            <div id="duckIcon" class="icon">
+                <img src="./img/icons/computer.ico">
+                <p>Duck.exe</p>
+            </div>
         </div>
-        <div class="menu-bar ui border border--top">
+        <div id="menuBar" class="menu-bar ui border border--top">
             <div id="menuButton" class="button menu-bar-item">
                 <img class="menu-bar-item-icon" src="./img/icons/book.ico">
                 <h1 class="text--large">Begin</h1>
@@ -44,7 +49,7 @@
             </div>
         </div>
         <div id="menu" class="menu ui border hidden">
-            <div class="menu-sidebar">
+            <div class="menu-sidebar animation__gradient">
                 <h1>Arcane-OS</h1>
             </div>
             <div class="menu-content"></div>

@@ -1,3 +1,5 @@
+import makeDraggable from "./dragging.js";
+
 const baseWindow = document.getElementById("windowTemplate").content.firstElementChild;
 const main = document.querySelector("main");
 
@@ -8,6 +10,9 @@ export const createWindow = (id, title) => {
     window.element.id = id;
     window.element.querySelector(".window-bar p").innerText = title;
     window.content = window.element.querySelector(".window-content");
+
+    makeDraggable(window.element.querySelector(".window-bar"), window.element);
+
     return window;
 }
 
