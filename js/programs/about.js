@@ -47,16 +47,12 @@ const createEye = () => {
     const eyeDiv = document.createElement("div");
     eyeDiv.classList.add("eye");
 
-    const eyeInner = document.createElement("img");
-    const eyeOuter = document.createElement("img");
-    const eyeClosed = document.createElement("img");
+    const eyeInner = document.querySelector("#eyeInner");
+    const eyeOuter = document.querySelector("#eyeOuter");
+    const eyeClosed = document.querySelector("#eyeClosed");
     eyeDiv.appendChild(eyeInner);
     eyeDiv.appendChild(eyeOuter);
     eyeDiv.appendChild(eyeClosed);
-
-    eyeInner.src = "/img/eye-inner.png";
-    eyeOuter.src = "/img/eye-outer.png";
-    eyeClosed.src = "/img/eye-closed.png";
 
     document.addEventListener("mousedown", () => {
         eyeInner.classList.add("hidden");
