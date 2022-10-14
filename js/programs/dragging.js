@@ -9,6 +9,9 @@ const onMouseMove = (e) => {
     if (dragging !== null) {
         dragging.style.left = (e.clientX - dragOffsetX) + "px";
         dragging.style.top = (e.clientY - dragOffsetY) + "px";
+
+        if (dragging.onDrag)
+            dragging.onDrag((e.clientX - dragOffsetX), (e.clientY - dragOffsetY));
     }
 }
 

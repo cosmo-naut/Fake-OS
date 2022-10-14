@@ -123,6 +123,10 @@ main {
   width: 150px;
   height: 150px;
 }
+.window--medium {
+  width: 300px;
+  height: 300px;
+}
 .window .button {
   display: flex;
   justify-content: center;
@@ -164,6 +168,14 @@ main {
   justify-content: flex-end;
   align-items: center;
 }
+.window-content__empty {
+  overflow: clip;
+}
+
+.foreground {
+  position: relative;
+  z-index: 4;
+}
 
 .button__square {
   width: 100px;
@@ -172,6 +184,14 @@ main {
 
 .abstract {
   position: fixed;
+}
+.abstract__overlay {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .eye {
@@ -247,6 +267,12 @@ main {
   color: white;
   border-bottom-width: 0px;
 }
+.window-content__empty {
+  background-color: transparent;
+}
+.window-content__empty .foreground {
+  background: radial-gradient(circle, transparent 80%, rgb(186, 186, 186) 85%);
+}
 
 .sparkle {
   background: radial-gradient(circle, white 5%, transparent 80%);
@@ -278,6 +304,10 @@ body {
 }
 .text__pixel {
   font-family: "Silkscreen", cursive;
+}
+.text__secret {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
 }
 
 @keyframes levitate {

@@ -90,8 +90,8 @@ const createEye = () => {
             y: vector.y / vectorLength
         }
 
-        eyeInner.style.left = (vectorLength > 10? unitVector.x * 10: vector.x) + "px";
-        eyeInner.style.top = (vectorLength > 10? unitVector.y * 10: vector.y) + "px";
+        eyeInner.style.left = (vectorLength > 25? unitVector.x * 25: vector.x) + "px";
+        eyeInner.style.top = (vectorLength > 15? unitVector.y * 15: vector.y) + "px";
     });
 
     return eyeDiv;

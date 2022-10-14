@@ -147,6 +147,11 @@ main {
         height: 150px;
     }
 
+    &--medium {
+        width: 300px;
+        height: 300px;
+    }
+
     .button {
         display: flex;
         justify-content: center;
@@ -198,7 +203,16 @@ main {
             justify-content: flex-end;
             align-items: center;
         }
+
+        &__empty {
+            overflow: clip;
+        }
     }
+}
+
+.foreground {
+    position: relative;
+    z-index: 4;
 }
 
 .button {
@@ -210,7 +224,17 @@ main {
 
 .abstract {
     position: fixed;
+    
+    &__overlay {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
 }
+
 
 .eye {
     position: relative;

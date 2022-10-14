@@ -19,14 +19,14 @@
 </head>
 <body>
     <template id="windowTemplate">
-        <div class="window ui border hidden draggable">
+        <div class="window border hidden draggable">
             <div class="window-bar border animation__gradient">
                 <p>Window</p>
                 <div class="button">
                     <p class="text__emoji text__emoji--small">💀</p>
                 </div>
             </div>
-            <div class="window-content"></div>
+            <div class="window-content ui"></div>
         </div>
     </template>
     <main>
@@ -67,7 +67,7 @@
                     <p>Photos</p>
                     <div class="arrow"></div>
                 </div>
-                <div class="menu-content-item">
+                <div id="divinationMenuItem" class="menu-content-item">
                     <img src="./img/icons/book.ico">
                     <p>Secrets</p>
                     <div class="arrow"></div>
@@ -106,3 +106,4 @@
     </main>
 </body>
 </html>
+

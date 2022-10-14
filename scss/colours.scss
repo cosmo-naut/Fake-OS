@@ -97,6 +97,15 @@ $horizontal: 270deg;
         color: white;
         border-bottom-width: 0px;
     }
+    &-content {
+        &__empty {
+            background-color: transparent;
+            
+            .foreground {
+                background: radial-gradient(circle, transparent 80%, $light-grey 85%);
+            }
+        }
+    }
 }
 
 .sparkle {
