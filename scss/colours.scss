@@ -27,6 +27,23 @@ $horizontal: 270deg;
         @include gradient($vertical);
         color: white;
     }
+
+    &-content {
+        &-item {
+            background-color: $light-grey;
+
+            &:hover {
+                background-color: rgba($color: #000000, $alpha: 0.0);
+            }
+
+        }
+    }
+}
+
+.arrow {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
 }
 
 .ui {
@@ -80,4 +97,8 @@ $horizontal: 270deg;
         color: white;
         border-bottom-width: 0px;
     }
+}
+
+.sparkle {
+    background: radial-gradient(circle, white 5%, transparent 80%)
 }

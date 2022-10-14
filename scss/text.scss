@@ -4,6 +4,10 @@ body {
 }
 
 .text {
+    &--medium {
+        font-size: 20px;
+    }
+
     &--large {
         font-size: 35px;
         font-weight: 600;

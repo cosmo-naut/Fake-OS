@@ -27,6 +27,19 @@
     }
 }
 
+@keyframes falling {
+    from {
+        top: 0px;
+        transform: rotate(0deg);
+        font-size: 30px;
+    }
+    to {
+        top: 60px;
+        transform: rotate(180deg);
+        font-size: 10px;
+    }
+}
+
 .animation {
     &__levitate{
         position: relative;
@@ -51,5 +64,10 @@
     &__gradient {
         animation: background-pan 30s linear infinite;
         background-size: 400% 400%;
+    }
+
+    &__falling {
+        position: relative;
+        animation: falling 1s linear forwards;
     }
 }
